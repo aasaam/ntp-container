@@ -4,6 +4,11 @@ services:
   ntp-container:
     image: ghcr.io/aasaam/ntp-container:latest
     container_name: ntp-container
+    logging:
+      driver: "journald"
+      options:
+        labels: "type=infra"
+        tag: "ntp-container"
     hostname: ntp-container
     ports:
       - "123:123/udp"
