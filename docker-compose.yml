@@ -6,4 +6,4 @@ services:
     container_name: ntp-container
     hostname: ntp-container
     ports:
-      - 123/udp
+      - "123:123/udp"

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DEFAULT_NTP="time.cloudflare.com"
+DEFAULT_NTP="time.windows.com"
 CHRONY_CONF_FILE="/etc/chrony/chrony.conf"
 
 # confirm correct permissions on chrony run directory
