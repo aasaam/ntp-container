@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  ntp-container:
+    image: ghcr.io/aasaam/ntp-container:latest
+    container_name: ntp-container
+    hostname: ntp-container
+    ports:
+      - 123/udp
